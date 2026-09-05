@@ -2,11 +2,7 @@ N = int(input())
 
 score = list(map(float, input().split()))
 
-sum = 0
-
-for i in score:
-    sum += i
-
+sum = sum(score)
 avg = sum / N
 
 print(f"{avg:.1f}")
