@@ -1,6 +1,9 @@
-N = int(input())
+n = int(input())
 
-for _ in range(N):
-    for _ in range(N):
-        print("*", end="")
-    print("")
+def print_sq(a):
+    if a == 0:
+        return
+    print_sq(a-1)
+    print("*" * n)
+
+print_sq(n)
