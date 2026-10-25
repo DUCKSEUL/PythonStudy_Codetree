@@ -1,7 +1,7 @@
-def _sum(n):
-    if n == 1:
-        return 1
-    return _sum(n-1) + n
+def f(n):
+    if n == 0:
+        return 0
+    return f(n-1) + n
 
 n = int(input())
-print(_sum(n))
+print(f(n))
