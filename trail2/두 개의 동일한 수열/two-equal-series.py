@@ -2,7 +2,4 @@ n = int(input())
 a = list(map(int, input().split()))
 b = list(map(int, input().split()))
 
-a.sort()
-b.sort()
-
-print("Yes" if a == b else "No")
+print("Yes" if sorted(a) == sorted(b) else "No")
